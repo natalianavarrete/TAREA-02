@@ -32,7 +32,7 @@ $.getJSON("geojason/areas_protegidas.geojson", function(geodata) {
 			var popupText = "Área protegida: " + feature.properties.NOMBRE;
 			layer.bindPopup(popupText);
 		} }).addTo(map);
-	control_layers.addOverlay(layer_geojson_ap, 'ap');
+	control_layers.addOverlay(layer_geojson_ap, 'Áreas Protegidas');
 });
 
 $.getJSON("geojason/senderos_84.geojson", function(geodata) {
